@@ -1,3 +1,18 @@
+
+# TLDR;
+seeing how I can embed existing notebook repos into this nifty jupyter-heroku deploy repo.
+
+story do far...
+- cloned both repos
+- copied entire notebook repo into ./notebooks/
+- Can specify conda requirements in environment.yml and pip deps as well. See https://elements.heroku.com/buildpacks/conda/conda-buildpack, there is a 300Mb limit. dependencies are listes in notebook repo. these are jupyter, PIL, matplotlib, pandas, seaborn, xlrd, scikit-learn. pip deps are beuatifulsoup glypy mechanize. all added to environment.yml
+- git add README.md ./notebooks environment.yml
+- git commit -m "awesome message"
+- git push origin master 
+- go to github repo and use heroku deploy button
+
+
+
 # heroku-jupyter
 
 Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to
