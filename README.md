@@ -7,6 +7,7 @@ story do far...
 - copied entire notebook repo into ./notebooks/
 - Can specify conda requirements in environment.yml and pip deps as well. See https://elements.heroku.com/buildpacks/conda/conda-buildpack, there is a 300Mb limit. dependencies are listes in notebook repo. these are jupyter, PIL, matplotlib, pandas, seaborn, xlrd, scikit-learn. pip deps are beuatifulsoup glypy mechanize. all added to environment.yml
 - git add README.md ./notebooks environment.yml
+- add conda_runtime.txt (as I happen to need python2)
 - git commit -m "awesome message"
 - git push origin master 
 - go to github repo and use heroku deploy button
